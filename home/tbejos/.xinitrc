@@ -6,5 +6,4 @@
 
 [[ -f ~/.Xresources ]]&& xrdb -merge -I$HOME ~/.Xresources 
 
-xbindkeys &
 exec bspwm
