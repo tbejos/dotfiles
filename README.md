@@ -1,4 +1,4 @@
-## Programs
+# Programs
 
 - WM: BSPWM
 - Effects: Compton
@@ -6,6 +6,6 @@
 - Bar: polybar
 - Terminal: URxvt
 
-# Other Progrmas
+## Other Progrmas
 - xbindkeys
 - numlockx
