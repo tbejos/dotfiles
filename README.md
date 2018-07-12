@@ -1,3 +1,5 @@
+## Programs
+
 - WM: BSPWM
 - Effects: Compton
 - Menu: rofi
