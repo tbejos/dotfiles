@@ -13,6 +13,7 @@ cp -r ~/.config/compton.conf ~/git/dotfiles/home/tbejos/.config
 cp -r ~/.xbindkeysrc ~/git/dotfiles/home/tbejos/
 cp -r ~/.xinitrc ~/git/dotfiles/home/tbejos/
 cp -r ~/.Xresources ~/git/dotfiles/home/tbejos/
+cp -r ~/.vimrc ~/git/dotfiles/home/tbejos/
 cp -r ~/.fehbg ~/git/dotfiles/home/tbejos/
 cp -r ~/Wallpapers/city.jpg ~/git/dotfiles/home/tbejos/Wallpapers
 
