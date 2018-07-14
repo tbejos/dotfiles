@@ -14,8 +14,7 @@ cp -r ~/.xbindkeysrc ~/git/dotfiles/home/tbejos/
 cp -r ~/.xinitrc ~/git/dotfiles/home/tbejos/
 cp -r ~/.Xresources ~/git/dotfiles/home/tbejos/
 cp -r ~/.fehbg ~/git/dotfiles/home/tbejos/
-cp -r ~/.mozilla/firefox/*.default/user.js ~/git/dotfiles/home/tbejos/.mozilla/firefox/user.default/
-cp -r ~/Wallpapers/city.jpg ~/git/dotfiles/home/tbejos/
+cp -r ~/Wallpapers/city.jpg ~/git/dotfiles/home/tbejos/Wallpapers
 
 ########## boot ##########
 
