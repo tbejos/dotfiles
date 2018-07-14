@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cp -r ~/git/dotfiles/home/tbejos/. ~/
-cp -r ~/git/dotfles/home/tbejos/Wallpapers ~/Wallpapers
+cp -r ~/git/dotfiles/home/tbejos/Wallpapers/ ~/
 cp -r ~/git/dotfiles/home/tbejos/.config ~/
 echo "sudo for /etc"
 sudo cp -r ~/git/dotfiles/etc /etc

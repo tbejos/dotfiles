@@ -9,3 +9,6 @@
 ## Other Progrmas
 - xbindkeys
 - numlockx
+
+## Note:
+- .mozzila is not restored or backed up by the scripts
