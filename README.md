@@ -11,4 +11,4 @@
 - numlockx
 
 ## Note:
-- .mozzila is not restored or backed up by the scripts
+- .mozilla is not restored or backed up by the scripts
