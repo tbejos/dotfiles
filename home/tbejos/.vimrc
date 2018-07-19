@@ -3,6 +3,8 @@ syntax enable
 
 " Spaces & tabs
 set autoindent
+set smartindent
+set wrap
 set tabstop=8		" number of visual spaces per TAB
 set shiftwidth=8	" reindent << / >> width
 set softtabstop=8	" number of spaces in tab when editing
@@ -33,7 +35,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 set foldenable
 set foldlevelstart=4
 set foldnestmax=4
-nnoremap <space> za	" space open/closes folds
+nnoremap <space> za
 set foldmethod=indent	" fold based on indent level
 
 " UI
@@ -49,7 +51,52 @@ set number
 set showcmd
 set cursorline
 filetype indent on
+filetype plugin on
 set wildmenu
 set lazyredraw
 set mouse=a
 set showmatch		" highlight matching [{()}]
+
+" Normal Copy/Paste
+set clipboard=unnamed
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
+
+"
+" github.com/amix/vimrcs/basic.vim
+"
+set history=500
+set autoread
+" :W sudo saves the file
+command W w !sudo tee % > /dev/null
+
+"" UI
+set hid
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+set magic		" for regex
+set foldcolumn=1	" extra margin on left
+
+if has("gui_running")
+	set guioptions-=T
+	set guioptions-=e
+	set guitablabel=%M\ %t
+endif
+
+set encoding=utf8
+set ffs=unix,dos,mac
+
+"" Disable backups b/c git
+set nobackup
+set nowb
+set noswapfile
+
+try
+	set undor=~/.vim_runtime/temp_dirs/undodir
+	set undofile
+catch
+endtry
+
+
