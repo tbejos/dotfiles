@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
 ; Reduce menu show delay
-[HKEY_CURRENT_USER\Control Panel\Desktop] 
+[HKEY_CURRENT_USER\Control Panel\Desktop]
     "MenuShowDelay"="100"
 
 ; No startup delay for programs
@@ -9,7 +9,7 @@ Windows Registry Editor Version 5.00
     "StartupDelayInMSec"=dword:00000000
 
 ; Old look of speaker/mixer
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC]
     "EnableMtcUvc"=dword:00000000
 
 ; Use UTC for system time
@@ -21,7 +21,7 @@ Windows Registry Editor Version 5.00
     "InitialKeyboardIndicators"="2147483650"
     "KeyboardDelay"="1"
     "KeyboardSpeed"="31"
-    
+
 ; Disable Telemetry
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\DataCollection]
     "AllowTelemetry"=dword:00000000
@@ -30,8 +30,13 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
     "LaunchTo"=dword:00000001
 
+; Show WSL filesystem in File Explorer
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{B2B4A4D1-2754-4140-A2EB-9A76D9D7CDC6}]
+    @="Linux"
+    "System.IsPinnedToNameSpaceTree"=dword:00000001
+
 ; Disallow Cortana and no web search
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
     "AllowCortana"=dword:00000000
     "DisableWebSearch"=dword:00000001
     "ConnectedSearchUseWeb"=dword:00000000
@@ -57,5 +62,3 @@ Windows Registry Editor Version 5.00
 ; Disable ad's
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
     "ShowSyncProviderNotification"=dword:00000000
-
-
